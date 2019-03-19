@@ -1,7 +1,7 @@
 div.overlay {
     opacity: 0;
     position: absolute;
-    top: 0;
+    top: 66px;
     bottom: -286px;  /* change this every time you add a photo to the gallery*/
     left: 0;
     right: 0;
