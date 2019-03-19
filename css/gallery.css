@@ -1,0 +1,11 @@
+div.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: -286px;  /* change this every time you add a photo to the gallery*/
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 2;
+    background: transparent;
+}
