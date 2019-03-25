@@ -1,8 +1,12 @@
 /*This CSS file corresponds to the index.html file.*/
+/* Branding color consist of Red(#A31700) - Gray(#5F6273) - Light Gray(#CCC9D1) - White(#F3F0F7) */
 #homepagenavbarlogo {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     color: black;   
+}
+nav div.nav-wrapper {
+    background-color: #F3F0F7;
 }
 nav ul a {
     color: black;
