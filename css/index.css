@@ -7,3 +7,6 @@
 nav ul a {
     color: black;
 }
+img.responsive-img {
+    max-width: 100%;
+}
