@@ -1,0 +1,9 @@
+/*This CSS file corresponds to the index.html file.*/
+#homepagenavbarlogo {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: black;   
+}
+nav ul a {
+    color: black;
+}
