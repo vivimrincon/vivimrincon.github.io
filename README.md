@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://ttalgihon.github.io/">
-    <img src="/images/profile strawberry.png" width="150">
+    <img src="/images/profile strawberry.png" width="120">
   </a>
 </p>
 
