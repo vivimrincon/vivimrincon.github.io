@@ -19,7 +19,7 @@ My modest section of the internet
 - [Contributing](#contributing)
 - [Copyright and license](#copyright-and-license)
 
-### Running project locally
+## Running project locally
 Run these commands in a terminal:
 
 ```bash
