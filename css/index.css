@@ -1,16 +1,53 @@
 /*This CSS file corresponds to the index.html file.*/
 /* Branding color consist of Red(#A31700) - Gray(#5F6273) - Light Gray(#CCC9D1) - White(#F3F0F7) */
-#homepagenavbarlogo {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    color: black;   
+
+/*Universal Selector of all html elements*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-nav div.nav-wrapper {
+/*Navigation options inside the header*/
+nav {
+    background-color: #A31700;
+    color: #F3F0F7;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+li {
+    display: inline-block;
+    padding: 8px 6px;
+}
+/*Changes appearance of the navigation option when hovered over*/
+li:hover {
     background-color: #F3F0F7;
+    color:#A31700;
 }
-nav ul a {
-    color: black;
+/*---------------------------------------------------------*/
+/*Styling for the footer*/
+footer {
+    background-color: #006fa3;
+    color: #F3F0F7;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
 }
-img.responsive-img {
-    max-width: 100%;
+
+#footer-socials-div {
+    background-color: orange;
+    color: #F3F0F7;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
