@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /*Navigation options inside the header*/
 nav {
@@ -32,22 +33,24 @@ li:hover {
 /*---------------------------------------------------------*/
 /*Styling for the footer*/
 footer {
-    background-color: #006fa3;
+    background-color: #A31700;
     color: #F3F0F7;
     width: 100%;
-    padding: 10px 10px;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
     text-align: center;
 }
-
 #footer-socials-div {
-    background-color: orange;
-    color: #F3F0F7;
-    width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-
+}
+#footer-socials-div a { 
+    display: inline-block;
+    padding: 4px 6px;
+}
+footer a:hover {
+    background-color: #F3F0F7;
+    color: #A31700;
 }
