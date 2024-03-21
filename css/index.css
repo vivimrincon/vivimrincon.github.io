@@ -1,17 +1,21 @@
 /*This CSS file corresponds to the index.html file.*/
-/* Branding color consist of Red(#9c0c0c) - Gray(#5F6273) - Light Gray(#CCC9D1) - White(#F3F0F7) */
+/* Branding color consist of Red(#9c0c0c) - White(#F6E9E8) - Black(#101010) */
+
+/* Selects the document's root element */
+:root {
+    background-color: #9c0c0c;
+    color: #F6E9E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /*Universal Selector of all html elements*/
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 /*Navigation options inside the header*/
 nav {
-    background-color: #9c0c0c;
-    color: #F3F0F7;
     width: 100%;
     padding: 3px 25px;
     display: flex;
@@ -28,40 +32,40 @@ li {
 }
 /*Changes appearance of the navigation option when hovered over*/
 li:hover {
-    background-color: #F3F0F7;
+    background-color: #F6E9E8;
     color:#9c0c0c;
 }
 /*---------------------------------------------------------*/
 /* Main body of content*/
-body {
-    background-color: #9c0c0c;
-}
 #about-me-div {
+    padding: 30px 190px; /*Possibly change values in the future*/
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 190px;
+
 }
 #about-me-paragraph {
     width: 460px;
     height: 360px;
 }
-/*Hold the selected work articles*/
+/*Holds the selected work articles*/
 main {
-    border-style: double;
+    padding: 10px 25px;
     display: flex;
     flex-direction: column;
-    padding: 10px 25px
 }
+/*Selected Work Text*/
 main h3 {
     padding-left: 25px;
+    padding-bottom: 2px;
 }
 .project-showcase {
-    background-color: #F3F0F7;
     padding: 25px 10px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 .project-image {
     margin: 0px 15px;
@@ -70,27 +74,23 @@ main h3 {
  /*Discover Buttons inside Selected Work*/
 .button {
     background-color: #9c0c0c;
-    color: #F3F0F7;
+    color: #F6E9E8;
     align-self: flex-end;
     cursor: pointer;
     border: 1;
     border-radius: 100px;
     border-style: solid;
-    border-color: black;
+    border-color: #F6E9E8;
     font-size: 16px;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .button:hover {
-    background-color: #F3F0F7;
+    background-color: #F6E9E8;
     color: #9c0c0c;
 }
-
 /*---------------------------------------------------------*/
 /*Styling for the footer*/
 footer {
-    background-color: #9c0c0c;
-    color: #F3F0F7;
     width: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -107,6 +107,6 @@ footer {
     padding: 4px 6px;
 }
 footer a:hover {
-    background-color: #F3F0F7;
-    color: #A31700;
+    background-color: #F6E9E8;
+    color: #9c0c0c;
 }
