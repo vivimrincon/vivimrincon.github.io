@@ -1,5 +1,5 @@
 /*This CSS file corresponds to the index.html file.*/
-/* Branding color consist of Red(#A31700) - Gray(#5F6273) - Light Gray(#CCC9D1) - White(#F3F0F7) */
+/* Branding color consist of Red(#9c0c0c) - Gray(#5F6273) - Light Gray(#CCC9D1) - White(#F3F0F7) */
 
 /*Universal Selector of all html elements*/
 * {
@@ -10,7 +10,7 @@
 }
 /*Navigation options inside the header*/
 nav {
-    background-color: #A31700;
+    background-color: #9c0c0c;
     color: #F3F0F7;
     width: 100%;
     padding: 3px 25px;
@@ -29,12 +29,12 @@ li {
 /*Changes appearance of the navigation option when hovered over*/
 li:hover {
     background-color: #F3F0F7;
-    color:#A31700;
+    color:#9c0c0c;
 }
 /*---------------------------------------------------------*/
 /* Main body of content*/
 body {
-    background-color: #A31700;
+    background-color: #9c0c0c;
 }
 #about-me-div {
     display: flex;
@@ -69,7 +69,7 @@ main h3 {
 }
  /*Discover Buttons inside Selected Work*/
 .button {
-    background-color: #A31700;
+    background-color: #9c0c0c;
     color: #F3F0F7;
     align-self: flex-end;
     cursor: pointer;
@@ -83,13 +83,13 @@ main h3 {
 }
 .button:hover {
     background-color: #F3F0F7;
-    color: #A31700;
+    color: #9c0c0c;
 }
 
 /*---------------------------------------------------------*/
 /*Styling for the footer*/
 footer {
-    background-color: #A31700;
+    background-color: #9c0c0c;
     color: #F3F0F7;
     width: 100%;
     display: flex;
