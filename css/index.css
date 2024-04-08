@@ -7,17 +7,24 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: uppercase;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+}
+html {
+    height: 100vh;
 }
 body {
     background-color: #9c0c0c;
     color: #F6E9E8;
+    min-height: 100vh;
     padding-left: 1.5vw; /* Unit of measurement relative to viewport */
     padding-right: 1.5vw;
+    overflow: hidden;
 }
-.container { /* containerizes header, main, and footer tag */
+div.container { /* containerizes header, main, and footer tag */
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
+    height: 100vh;
     overflow: hidden;
 }
 ul {
@@ -26,7 +33,7 @@ ul {
 a {
     text-decoration: unset;
     color: inherit;
-    padding: .28rem; /* Unit of measurement relative to font-size of root element */
+    padding: .29rem; /* Unit of measurement relative to font-size of root element */
 }
 /* Appreance change of a hyperlink */
 a:hover {
@@ -40,8 +47,6 @@ nav {
     padding-top: 2.18rem;
     justify-content: space-between;
     align-items: baseline;
-    animation: slidedown 3s;
-    animation-iteration-count: 1;
 }
 
 /*---------------------------------------------------------*/
@@ -49,10 +54,20 @@ nav {
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-size: max(21px, 3.12vw);
-    animation: slidedown 2s;
-    animation-iteration-count: 1;
+
+}
+main > h1 {
+    font-size: 7em;
+    min-width: max-content;
+
+}   
+main > p {
+    display: block;
+    width: 32%;
+    line-height: 19px;
+    padding-top: 1rem;
 }
 
 /*---------------------------------------------------------*/
@@ -61,12 +76,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    transform: translateY(30px);
-    animation: appearup 1.5s forwards 1.25s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-    animation-iteration-count: 1;
+    padding-bottom: 2.18rem;
 }
 .social-media-links {
     display: flex;
+    justify-content: space-between;
 }
 
 /*---------------------------------------------------------*/
