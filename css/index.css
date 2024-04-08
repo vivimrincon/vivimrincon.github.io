@@ -1,39 +1,34 @@
 /* This CSS file corresponds to the index.html file. */
 /* Branding color consist of Red(#9c0c0c) - White(#F6E9E8) - Black(#101010) */
 
-/* Universal Selector of all html elements */
+/* Page Setup */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-transform: uppercase;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-/* Page setup */
 body {
-    display: block;
-    position: relative;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow: hidden;
-    padding-left: 1.5vw; /* Unit of measurement relative to viewport */
-    padding-right: 1.5vw;
     background-color: #9c0c0c;
     color: #F6E9E8;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding-left: 1.5vw; /* Unit of measurement relative to viewport */
+    padding-right: 1.5vw;
+}
+.container { /* containerizes header, main, and footer tag */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 ul {
     list-style: none;
 }
-li {
-    display: inline-block;
-    padding: .28rem;
-}
 a {
     text-decoration: unset;
     color: inherit;
-    padding: .25rem; /* Unit of measurement relative to font-size of root element */
+    padding: .28rem; /* Unit of measurement relative to font-size of root element */
 }
-/* Appreance change of a hyperlink when the cursor is hovering over the link */
+/* Appreance change of a hyperlink */
 a:hover {
     background-color: #F6E9E8;
     color: #9c0c0c;
@@ -41,9 +36,8 @@ a:hover {
 /*---------------------------------------------------------*/
 /* Navigation options inside the header */
 nav {
-    width: 100%;
-    padding-top: 2.18rem;
     display: flex;
+    padding-top: 2.18rem;
     justify-content: space-between;
     align-items: baseline;
     animation: slidedown 3s;
@@ -53,11 +47,10 @@ nav {
 /*---------------------------------------------------------*/
 /* Main body of content */
 main {
-    background-color: blue;
-    font-size: max(21px, 3.12vw);
-}
-main > h1 {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    font-size: max(21px, 3.12vw);
     animation: slidedown 2s;
     animation-iteration-count: 1;
 }
@@ -65,39 +58,30 @@ main > h1 {
 /*---------------------------------------------------------*/
 /* Footer */
 footer {
-    background-color: yellow;
     display: flex;
-    position: absolute;
-    bottom: 0;
-    flex-grow: 0;
-    flex-shrink: 0;
-    width: 100%;
-}
-
-footer > ul {
-    background-color: green;
     justify-content: space-between;
-    align-items: center;
-    align-self: center;
-    align-content: center;
+    align-items: flex-end;
+    transform: translateY(30px);
+    animation: appearup 1.5s forwards 1.25s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-iteration-count: 1;
+}
+.social-media-links {
+    display: flex;
 }
 
 /*---------------------------------------------------------*/
 /* CSS Animations */
-@keyframes slideup {
-    from { 
-        font-style: oblique;
-        transform: translateY(100%);
-    }
-    to { 
-        transform: translateY(0%);
-    }
-}
 @keyframes slidedown {
     from {
         transform: translateY(-300%);
     }
     to {
+        transform: translateY(0%);
+    }
+}
+@keyframes appearup {
+    to {
+        opacity: 1;
         transform: translateY(0%);
     }
 }
