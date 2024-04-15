@@ -74,8 +74,8 @@ main > p {
 /* Footer */
 footer {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: baseline;
     padding-bottom: 2.18rem;
 }
 .social-media-links {

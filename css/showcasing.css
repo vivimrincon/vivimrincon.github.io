@@ -1,0 +1,93 @@
+/* CSS for showcasing selected works */
+/* Page Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+}
+html {
+    height: 100vh;
+}
+body {
+    background-color: #9c0c0c;
+    color: #F6E9E8;
+    min-height: 100vh;
+    padding-left: 1.5vw; /* Unit of measurement relative to viewport */
+    padding-right: 1.5vw;
+}
+div.container { /* containerizes header, main, and footer tag */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    overflow: scroll;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: unset;
+    color: inherit;
+    padding: .29rem; /* Unit of measurement relative to font-size of root element */
+}
+/* Appreance change of a hyperlink */
+a:hover {
+    background-color: #F6E9E8;
+    color: #9c0c0c;
+}
+
+/* Navigation options inside the header */
+nav {
+    display: flex;
+    padding-top: 2.18rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* Main body of content */
+main {
+    display: flex;
+    flex-direction: column;
+}
+main > h1 {
+    font-size: 7em;
+    letter-spacing: -.02em;
+}
+
+/* styling for the project details */
+div.project-information-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4.1667vw;
+    padding-top: 6.9792vw;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+div.project-info-list {
+    width: 17vw;
+    padding-right: 1.1458vw;
+}
+div.web-stack-list {
+    width: 32.9167vw;
+}
+div.project-info-description {
+    width: 48.3333vw
+}
+img {
+    aspect-ratio: 1920/1080;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2.18rem;
+}
+.social-media-links {
+    display: flex;
+    justify-content: space-between;
+}
